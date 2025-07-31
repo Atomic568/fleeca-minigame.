@@ -1,0 +1,60 @@
+body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  gap: 10px;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.grid.small {
+  grid-template-columns: repeat(9, 40px);
+  gap: 6px;
+}
+
+.row-label {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.shape {
+  width: 40px;
+  height: 40px;
+  background-color: #2e2e2e;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.shape.selected {
+  background-color: orange;
+}
+
+.circle { border-radius: 50%; }
+.square { }
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid white;
+  background: none;
+  border-radius: 0;
+}
+.star {
+  width: 0; height: 0;
+  color: white;
+  font-size: 20px;
+}
+.hexagon {
+  clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+}
