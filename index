@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shape Pattern Puzzle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Match the pattern by clicking the shapes</h2>
+
+  <div id="grid" class="grid"></div>
+
+  <div id="selectedRow" class="row-label">Your Selection</div>
+  <div id="selected" class="grid small"></div>
+
+  <div id="targetRow" class="row-label">Target Pattern</div>
+  <div id="pattern" class="grid small"></div>
+
+  <button onclick="checkPattern()">Check Match</button>
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
